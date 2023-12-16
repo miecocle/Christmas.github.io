@@ -1,0 +1,10 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+h2{color: black}
+body {
+  background-image: url('https://img.freepik.com/free-vector/christmas-background-with-bokeh-snowflakes_1393-207.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  

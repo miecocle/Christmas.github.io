@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎄 Chúc Mừng Giáng Sinh 🎅</title>
+  <style>
+    body {
+      background-image: url('https://img.freepik.com/free-vector/christmas-background-with-bokeh-snowflakes_1393-207.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #e74c3c;
+      color: #fff;
+      padding: 20px;
+      text-shadow: 2px 2px 4px #000;
+      border-radius: 10px;
+    }
+
+    h1 {
+      font-size: 3em;
+    }
+
+    section {
+      margin: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    p {
+      font-size: 1.2em;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin: 10px;
+    }
+
+    .small-image {
+      width: 50%;
+      /* Đặt chiều rộng là 50% */
+    }
+
+    iframe {
+      width: 100%;
+      height: 500px;
+      border: none;
+      margin: 10px;
+    }
+
+    table {
+      width: 80%;
+      margin: 20px auto;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: #fff;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* Lịch Tháng 12 CSS */
+    .calendar-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .calendar {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    .calendar th,
+    .calendar td {
+      padding: 15px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+
+    .calendar th {
+      background-color: #e74c3c;
+      color: #fff;
+    }
+
+    .calendar td.prev-month,
+    .calendar td.next-month {
+      color: #aaa;
+    }
+
+    .calendar td:hover {
+      background-color: #f9f9f9;
+    }
+
+    /* Nổi bật ngày 24, 25 */
+    .calendar td.highlight {
+      background-color: #3498db;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    /* Thêm CSS mới cho phần trang trí */
+    .event-table {
+      margin-top: 20px;
+      position: relative;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .event-table:before {
+      content: "\1F384";
+      /* Unicode ký tự cho cây thông Giáng Sinh */
+      font-size: 3em;
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .event-table th,
+    .event-table td {
+      padding: 15px;
+      border: 1px solid #ddd;
+    }
+
+    .event-table th {
+      background-color: #3498db;
+      color: #fff;
+    }
+
+    .event-table td {
+      background-color: #f9f9f9;
+    }
+
+    .event-table tr:first-child {
+      border-top: 2px solid #3498db;
+    }
+    h2 {
+      color: red;
+    }
+     /* Snowfall Animation */
+      #snowfall-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+      }
+
+      .snowflake {
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        background-color: #fff;
+        border-radius: 50%;
+        animation: snowfall linear infinite;
+      }
+
+      @keyframes snowfall {
+        0% {
+          transform: translateY(-100vh) translateX(0);
+        }
+        100% {
+          transform: translateY(100vh) translateX(100vw);
+        }
+      }
+
+  </style>
+</head>
+
+<body>
+  <div id="snowfall-container"></div>
+  <header>
+    <h1>🎄 Chúc Mừng Giáng Sinh 🎅</h1>
+    
+  </header>
+  <script>
+    // JavaScript to create snowflakes dynamically
+    document.addEventListener('DOMContentLoaded', function () {
+      const snowfallContainer = document.getElementById('snowfall-container');
+
+      for (let i = 0; i < 50; i++) {
+        const snowflake = document.createElement('div');
+        snowflake.className = 'snowflake';
+        snowflake.style.left = Math.random() * 100 + 'vw';
+        snowflake.style.animationDuration = Math.random() * 2 + 1 + 's';
+        snowfallContainer.appendChild(snowflake);
+      }
+    });
+  </script>
+  <section>
+    <h2>Giáng Sinh Là Gì?</h2>
+    <p>Giáng Sinh là một lễ hội kỳ lạ trong năm, là thời điểm mà mọi người tụ tập bên gia đình, chia sẻ niềm vui và tạo
+      nên những kỷ niệm đáng nhớ.</p>
+  </section>
+
+  <section>
+    <h2>Ý Nghĩa Của Giáng Sinh</h2>
+    <p>Giáng sinh là dịp lễ kỷ niệm sự ra đời của Chúa Kitô, là thời điểm hòa bình và lòng nhân ái. Đây là dịp để chúng
+      ta sum vầy, tôn vinh tình thương và chia sẻ niềm vui với mọi người.</p>
+    <!-- Chèn thêm phần mô tả về ý nghĩa của Giáng Sinh -->
+    <p>Giáng Sinh là thời điểm của sự hi vọng, lòng nhân ái, và tình thương. Đây là dịp để chúng ta nhớ về giá trị gia
+      đình, kết nối với người thân, và lan tỏa niềm vui đến mọi người xung quanh.</p>
+    <!-- Chèn ảnh -->
+    <img class="small-image" src="https://i.natgeofe.com/k/dfc7bec2-0657-4887-81a7-6d024a8c3f70/WH-XmasTree_4x3.jpg"
+      alt="Christmas Tree">
+  </section>
+
+  <section>
+    <h2>Những Món Quà Nên Trao Cho Nhau</h2>
+    <!-- Chèn ảnh mới -->
+    <img class="small-image"
+      src="https://assets.editorial.aetnd.com/uploads/2009/10/christmas-gettyimages-184652817.jpg" alt="Gifts">
+    <p>Trong dịp Giáng sinh, những món quà ý nghĩa như sách, đồ chơi, quần áo, và đặc biệt là sự hiện diện và tình
+      thương của gia đình và bạn bè là những món quà tuyệt vời nhất.</p>
+  </section>
+
+  <section>
+    <h2>Làm Tờ Lịch Tháng 12</h2>
+    <div class="calendar-container">
+      <table class="calendar">
+        <tbody>
+          <tr>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+            <th>Sun</th>
+          </tr>
+          <tr>
+            <td class="prev-month">29</td>
+            <td class="prev-month">30</td>
+            <td class="prev-month">31</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+          </tr>
+          <tr>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td class="highlight">24</td>
+            <td class="highlight">25</td>
+          </tr>
+          <tr>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td>31</td>
+            <td class="next-month">1</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Video Giáng Sinh</h2>
+    <iframe src="https://www.youtube.com/embed/nlR0MkrRklg?si=kMFvJw0afU-3Mmn2" frameborder="0"
+      allowfullscreen=""></iframe>
+  </section>
+
+  <section class="event-table">
+    <h2 class="event-title">Lịch Sự Kiện</h2>
+    <table>
+      <tr>
+        <th>Ngày</th>
+        <th>Sự Kiện</th>
+      </tr>
+      <tr>
+        <td>24/12</td>
+        <td>🌟 Đêm Tiệc Giáng Sinh 🎉</td>
+      </tr>
+      <tr>
+        <td>25/12</td>
+        <td>🎄 Lễ Giáng Sinh 🎁</td>
+      </tr>
+    </table>
+  </section>
+  <section>
+    <h2>Audio Giáng Sinh</h2>
+    <iframe src="ChangGiongGiangSinh-LuWillisticdatfitzx-7206785.mp3" width="100%" height="60" frameborder="0"
+      allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </section>
+</body>
+
+</html>
